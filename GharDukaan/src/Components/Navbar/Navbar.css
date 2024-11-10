@@ -1,0 +1,118 @@
+/* General Styles */
+header {
+	background-color: #fff;
+	height: 10vh;
+	box-shadow: 0 5px 15px rgba(0, 22, 84, 0.1);
+	padding: 10px 20px;
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.logo img {
+	width: 150px;
+}
+
+.nav ul {
+	display: flex;
+	list-style: none;
+	gap: 25px;
+}
+
+.nav a {
+	color: #333;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.nav a:hover {
+	color: #27ae60;
+}
+
+/* Button and My List */
+.button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.button h4 {
+	font-weight: 500;
+	margin: 0;
+}
+
+.button span {
+	padding: 2px 6px;
+	background-color: #27ae60;
+	color: #fff;
+	border-radius: 12px;
+	font-size: 0.9em;
+}
+
+.btn1 {
+	background-color: #27ae60;
+	color: #fff;
+	border: none;
+	padding: 8px 15px;
+	border-radius: 5px;
+	font-size: 0.9em;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.btn1 i {
+	font-size: 1em;
+}
+
+/* Toggle Button for Mobile */
+.toggle {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.nav ul {
+		display: none;
+		flex-direction: column;
+		background-color: #27ae60;
+		position: absolute;
+		top: 10vh;
+		left: 0;
+		width: 100%;
+		padding: 15px;
+	}
+
+	.nav ul.small {
+		display: flex;
+	}
+
+	.nav a {
+		color: #fff;
+		padding: 10px 0;
+		display: block;
+		text-align: center;
+	}
+
+	.button {
+		display: none;
+	}
+
+	.toggle {
+		display: block;
+		cursor: pointer;
+		font-size: 1.5em;
+		color: #333;
+	}
+}

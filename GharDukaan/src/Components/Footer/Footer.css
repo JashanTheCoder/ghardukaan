@@ -1,0 +1,110 @@
+/* Footer Contact Section */
+.footerContact {
+	background-color: #27ae60;
+	padding: 40px 0;
+	color: #fff;
+	text-align: center;
+}
+.footerContact h1 {
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+.footerContact p {
+	font-size: 1em;
+}
+.footerContact .btn5 {
+	background-color: #fff;
+	color: #27ae60;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+.footerContact .btn5:hover {
+	background-color: #1d2636;
+	color: #fff;
+}
+
+/* Footer Main */
+footer {
+	background-color: #1d2636;
+	padding: 50px 0;
+	color: #fff;
+}
+footer .container {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	gap: 20px;
+}
+footer .logo-box {
+	grid-column: span 2;
+}
+footer .logo img {
+	width: 150px;
+	margin-bottom: 10px;
+}
+footer h2 {
+	font-size: 1.2em;
+	font-weight: 500;
+}
+footer p {
+	color: #9a9a9a;
+	margin: 20px 0;
+}
+footer .input {
+	display: flex;
+	gap: 10px;
+}
+footer input[type='text'] {
+	flex: 1;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+footer button {
+	background-color: #27ae60;
+	color: #fff;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+footer h3 {
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+footer ul li {
+	color: #9a9a9a;
+	margin-bottom: 10px;
+}
+footer ul li:hover {
+	color: #fff;
+}
+
+/* Legal Section */
+.legal {
+	text-align: center;
+	padding: 20px;
+	background: #1d2636;
+	color: rgba(255, 255, 255, 0.5);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+	footer .container {
+		grid-template-columns: 1fr 1fr;
+	}
+	.footerContact h1 {
+		font-size: 1.5em;
+	}
+	.footerContact p {
+		font-size: 0.9em;
+	}
+}
